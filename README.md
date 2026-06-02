@@ -1,4 +1,4 @@
-## 🎓 Carian Keputusan Pelajar - Dashboard Surat Lantikan
+## 🎓 Carian Keputusan Pelajar - Dashboard Keputusan Pemilihan Elektif PPISMP Sem III 25/26
 
 Dashboard interaktif untuk pencarian keputusan pemilihan kursus elektif pelajar TESL.
 
@@ -21,7 +21,7 @@ Dashboard interaktif untuk pencarian keputusan pemilihan kursus elektif pelajar 
 ### 📁 Struktur File
 
 ```
-surat-lantikan/
+carian keputusan/
 ├── index.html      # File HTML utama
 ├── styles.css      # File styling CSS
 ├── script.js       # File JavaScript untuk fungsionalitas
