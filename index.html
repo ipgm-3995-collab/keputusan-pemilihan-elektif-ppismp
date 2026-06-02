@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ms-MY">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carian Keputusan Pelajar - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🔍 Carian Keputusan Pelajar</h1>
+            <p>Sistem Pencarian Keputusan Pemilihan Kursus Elektif</p>
+        </header>
+
+        <main>
+            <div class="search-section">
+                <form id="searchForm">
+                    <div class="form-group">
+                        <label for="classSelect">Pilih Kelas:</label>
+                        <select id="classSelect" required>
+                            <option value="">-- Pilih Kelas --</option>
+                            <option value="TESL K1">TESL 1</option>
+                            <option value="TESL K2">TESL 2</option>
+                            <option value="TESL K3">TESL 3</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentSelect">Pilih Nama Pelajar:</label>
+                        <select id="studentSelect" required disabled>
+                            <option value="">-- Pilih Nama Pelajar --</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn-search">🔍 Cari Keputusan</button>
+                </form>
+            </div>
+
+            <div id="resultSection" class="result-section" style="display: none;">
+                <div class="result-card">
+                    <h2>Keputusan Pemilihan Kursus</h2>
+                    
+                    <div class="student-info">
+                        <div class="info-group">
+                            <label>ID Pelajar:</label>
+                            <p id="resultId"></p>
+                        </div>
+                        <div class="info-group">
+                            <label>Nama Pelajar:</label>
+                            <p id="resultName"></p>
+                        </div>
+                        <div class="info-group">
+                            <label>Kelas:</label>
+                            <p id="resultClass"></p>
+                        </div>
+                    </div>
+
+                    <div class="election-container">
+                        <div class="election-group">
+                            <h3>📚 ELEKTIF 1</h3>
+                            <div class="election-box">
+                                <p id="resultElektif1"></p>
+                            </div>
+                        </div>
+
+                        <div class="election-group">
+                            <h3>📚 ELEKTIF 2</h3>
+                            <div class="election-box">
+                                <p id="resultElektif2"></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn-close" onclick="closeResult()">Tutup</button>
+                </div>
+            </div>
+
+            <div id="noResult" class="no-result" style="display: none;">
+                <p>⚠️ Pelajar tidak dijumpai. Sila semak semula pemilihan Anda.</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 - IPGM Dashboard Pelajar</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
